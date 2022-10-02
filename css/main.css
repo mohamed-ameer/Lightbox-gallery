@@ -85,4 +85,10 @@ i.right-icon:hover{
         top:20px;
         left: 20px;
     }
+    i.left-icon:hover{
+        color: rgba(0, 0, 0, 0.8);
+    }
+    i.right-icon:hover{
+        color: rgba(0, 0, 0, 0.8);
+    }
 }
