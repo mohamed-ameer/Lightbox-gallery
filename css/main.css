@@ -87,8 +87,10 @@ i.right-icon:hover{
     }
     i.left-icon:hover{
         color: rgba(0, 0, 0, 0.8);
+        transform: translateX(0px);
     }
     i.right-icon:hover{
         color: rgba(0, 0, 0, 0.8);
+        transform: translateX(0px);
     }
 }
