@@ -23,7 +23,7 @@ a,a:hover{
 }
 .light-box-item{
     width: 60%;
-    height: 500px;
+    height: 60vh;
     background-color: rgba(0, 0, 0, 0.9);
     background-image: url(../imgs/7099197.jpg);
     background-position: center center;
@@ -76,4 +76,13 @@ i.left-icon:hover{
 i.right-icon:hover{
     color: rgba(0, 0, 0, 0.8);
     transform: translateX(10px);
+}
+@media screen and (max-width:570px) {
+    .light-box-item{
+        width:90% ;
+    }
+    i.close-icon{
+        top:20px;
+        left: 20px;
+    }
 }
