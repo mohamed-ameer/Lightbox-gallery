@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="text-center p-4 bg-dark text-white">
+        <div class="container">
+            <h1>LightBox Gallery</h1>
+            <p class="lead">click on any picture to show it in a lightbox</p>
+            <h5>Enjoy 🤖</h5>
+
+        </div>
+    </section>
+    <section class="items-group overflow-auto position-relative">
+        <div class="container mt-5 mb-5">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-4 position-relative">
+                    <div class="item overflow-hidden">
+                        <img class="w-100" src="imgs/7099197.jpg" alt="">
+                        <div class="item-content p-1 w-75 text-center">
+                            <h3>item1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nemo odit quibusdam natus dignissimos porro eum animi aliquam, ipsam adipisci.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 position-relative">
+                    <div class="item">
+                        <img class="w-100" src="imgs/7099201.jpg" alt="">
+                        <div class="item-content p-1 w-75 text-center">
+                            <h3>item1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nemo odit quibusdam natus dignissimos porro eum animi aliquam, ipsam adipisci.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 position-relative">
+                    <div class="item ">
+                        <img class="w-100" src="imgs/7099213.jpg" alt="">
+                        <div class="item-content p-1 w-75 text-center">
+                            <h3>item1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nemo odit quibusdam natus dignissimos porro eum animi aliquam, ipsam adipisci.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="light-box d-none">
+            <i class="fa-solid fa-circle-xmark close-icon"></i>
+            <i class="fa-solid fa-circle-chevron-left me-2 left-icon"></i>
+            <div class="light-box-item position-relative">
+                <div class="image-order"><h5>1</h5></div>
+            </div>
+            <i class="fa-solid fa-circle-chevron-right ms-2 right-icon"></i>
+
+        </div>
+    </section>
+    <footer class="bg-dark text-center text-white">
+        <p class="m-0 p-4">Copyright &copy; 2022 All Rights Reserved by 
+            <a href="#">mohamed ameer</a>.
+               </p>
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>   
+    <script src="js/main.js"></script> 
+</body>
+</html>
