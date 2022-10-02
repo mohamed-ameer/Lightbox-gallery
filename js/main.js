@@ -5,12 +5,12 @@ let imageOrder = document.querySelector('.image-order h5');
 let closeIcon = document.querySelector('.close-icon');
 let leftIcon = document.querySelector('.left-icon');
 let rightIcon = document.querySelector('.right-icon');
-let regex = /^(http:\/\/127.0.0.1:5500)/;
 let allImagesSrc = [];
 let currentIndex = 0;
 for(let i = 0 ; i < allImagesElements.length ; i++){
-    allImagesSrc[i] = allImagesElements[i].src.replace(regex,'');
+    allImagesSrc[i] = allImagesElements[i].getAttribute('src');
 }
+console.log(allImagesSrc)
 for(let i = 0 ; i < allImagesElements.length ; i++){
     allImagesElements[i].addEventListener('click',function(){
         lightBox.classList.remove('d-none')
@@ -67,6 +67,6 @@ rightIcon.addEventListener('click',function(){
     }
 });
 function insertImageSrc(index){
-    lightBoxItem.style.cssText = `background-image: url(..${allImagesSrc[index]});`;
+    lightBoxItem.style.cssText = `background-image: url(${allImagesSrc[index]});`;
     imageOrder.innerHTML = index + 1;
 }
